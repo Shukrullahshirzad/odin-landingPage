@@ -49,6 +49,11 @@ a{
 header{
   display: flex;
   justify-content: space-around;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
   align-items: center;
   height: 70px;
   background: linear-gradient(90deg, #b8c28a 0%, #0f201a 100%);
