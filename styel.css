@@ -1,0 +1,98 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root{
+  --bg-hero-footer: #1f2937;
+  --h1-font: 48px extra-bold #f9faf8;
+  --hero-para-font-size: 18px;
+  --hero-para-color: #e5e7eb;
+  --logo-font-size: 24px;
+  --logo-color: #f9faf8;
+  --bg-btn-callToAction: #3882f6;
+}
+body{
+  font-family:'Roboto', sans-serif;
+}
+img{
+  width: 100%;
+}
+li{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+}
+ul{
+  display: flex;
+  gap: 20px;
+}
+.btn{
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btn:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+
+header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70px;
+  background: linear-gradient(90deg, #b8c28a 0%, #0f201a 100%);
+  -webkit-box-shadow: 1px 11px 5px 0px rgba(0,0,0,0.51);
+-moz-box-shadow: 1px 11px 5px 0px rgba(0,0,0,0.51);
+box-shadow: 1px 11px 5px 0px rgba(0,0,0,0.51);
+}
+.logo{
+  font-size: var(--logo-font-size);
+  color: var(--logo-color);
+}
+.logo img{
+  width: 64px;
+}
+header a{
+  color: var(--hero-para-color);
+  font-size: var(--hero-para-font-size);
+}
+.hero{
+  background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+  min-height: calc(100vh - 70px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+.hero .img{
+  flex: 1;
+}
+.hero .content{
+  flex: 1;
+  text-align: center;
+}
+.hero h1{
+  font-size: 50px;
+  margin-block-end: 20px;
+}
+.hero p{
+  font-size: 20px;
+  margin-block-end: 50px;
+}
