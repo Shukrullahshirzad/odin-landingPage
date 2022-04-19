@@ -18,15 +18,9 @@ body{
 img{
   width: 100%;
 }
-li{
-  list-style-type: none;
-}
+
 a{
   text-decoration: none;
-}
-ul{
-  display: flex;
-  gap: 20px;
 }
 .btn{
   background-color: #c2fbd7;
@@ -61,6 +55,13 @@ header{
   -webkit-box-shadow: 1px 11px 5px 0px rgba(0,0,0,0.51);
 -moz-box-shadow: 1px 11px 5px 0px rgba(0,0,0,0.51);
 box-shadow: 1px 11px 5px 0px rgba(0,0,0,0.51);
+}
+header li{
+  list-style-type: none;
+}
+header ul{
+  display: flex;
+  gap: 20px;
 }
 .logo{
   font-size: var(--logo-font-size);
@@ -212,4 +213,38 @@ transform: translateY(-10px);
 
 .blockquote h4:first-letter {
  margin-left:-12px;
+}
+.call-to-action{
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-color: #f0f0ea;
+}
+.call-to-action h2{
+  text-transform: uppercase;
+  font-size: 50px;
+  margin-block-end: 70px;
+}
+.call-to-action .content{
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  font-size: 30px;
+}
+.call-to-action ul li {
+  list-style: none;
+  padding-inline-start: 10px;
+}
+.call-to-action ul li::before {
+  content: '';
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  background-image: url(./shoe-logo.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
