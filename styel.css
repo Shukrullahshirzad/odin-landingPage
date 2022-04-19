@@ -248,3 +248,10 @@ transform: translateY(-10px);
   background-repeat: no-repeat;
   background-position: center;
 }
+footer{
+  height: 70px;
+  background: #292a2b;
+  display: grid;  
+  place-items: center; 
+  color: #e3ffe7;
+}
